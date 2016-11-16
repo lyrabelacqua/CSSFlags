@@ -1,0 +1,23 @@
+body {
+	background: #EEE9D5;
+}
+
+
+.japan {
+	display: block;
+	background: #ffffff;
+	width: 500px;
+	height: 250px;
+	margin: 0 auto;
+	margin-top:30px;
+}
+
+.japan:before {
+	content: "\26AB";
+	color: #ff0000;
+	font-size: 200px;
+	display: block;
+	position: relative;
+	top: -15px;
+	left: 160px;
+}
