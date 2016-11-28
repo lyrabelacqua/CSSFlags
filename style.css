@@ -1,5 +1,6 @@
-body {
+html {
 	background: #EEE9D5;
+  
 }
 
 
@@ -13,13 +14,15 @@ body {
 }
 
 .japan:before {
-	content: "\26AB";
-	color: #ff0000;
-	font-size: 200px;
+	content: '';
+	background: #BC002D;
+	width: 120px;
+	height: 120px;
 	display: block;
 	position: relative;
-	top: -15px;
-	left: 110px;
+	top: 25%;
+	left: 36%;
+	border-radius: 50%;
 }
 
 .czech {
@@ -29,7 +32,7 @@ body {
 	height: 125px;
 	margin: 0 auto;
 	margin-top:30px;
-	box-shadow: 0px 125px 0 #ff0000;
+	box-shadow: 0px 125px 0 #D7141A;
 
 }
 
@@ -40,5 +43,111 @@ body {
 	height: 0px;
 	border-top: 125px solid transparent;
   	border-bottom: 125px solid transparent;
-  	border-left: 200px solid #0000ff;
+  	border-left: 200px solid #11457E;
+}
+
+.info {
+	display: none;
+}
+
+.micronesia {
+    display: block;
+    background-color: #75B2DD;
+    text-align: center;
+    letter-spacing: 50px;
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    margin-top: 150px;
+    box-sizing: border-box;
+    color: white;
+    padding-left: 80px;
+    padding-top: 70px;
+    padding-bottom: -70px;
+    margin-bottom: -70px;
+    padding-right:20px;
+    font-size:70px;
+    
+    
+    
+}
+
+
+.micronesia:before {
+    content: '\2605';
+    color: white;
+    display: block;
+    position: relative;
+    top: -70px;
+    padding-top: -50px;
+    font-size: 70px;
+    height: 10px;
+    
+    
+
+}
+
+.micronesia:after {
+    content: '\2605';
+    color: white;
+    position: relative;
+    display: block;
+    font-size: 70px;
+    height: 90px;
+    right: 15%;
+    transform: rotate(180deg);
+}
+
+.greece {
+    margin: 0 auto;
+    display: block;
+    height: 30px;
+    width: 400px;
+    background-color: #0D5EAF;
+    margin-top: 100px;
+    box-shadow: 0 30px 0 #FFFFFF, 0 60px 0 #0D5EAF, 0 90px 0 #FFFFFF, 0 120px 0 #0D5EAF, 0 150px 0 #FFFFFF, 0 180px 0 #0D5EAF, 0 210px 0 #FFFFFF, 0 240px 0 #0D5EAF;
+    
+}
+
+.greece:before {
+    width: 120px;
+    height: 120px;
+    display: block;
+    content: '';
+    background-color: #0D5EAF;
+    color: #FFFFFF;
+    font-size: 250px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.greece:after {
+    color: #FFFFFF;
+    display: block;
+    content: '\274C';
+    font-size: 110px;
+    position: relative;
+    top:-35px;
+    left:-35px;
+    transform: rotate(45deg);
+    
+}
+
+@media all and (max-width:450px) {
+	.czech, .japan, .micronesia, .greece {
+		display: none;
+	}
+    
+    .info {
+        display: block;
+        text-align: center;
+        font-family: Arial;
+        font-size: 20px;
+        position: relative;
+        margin-top: 250px;
+        height: 100px;
+        color: #472E43;
+        font-variant: small-caps;
+        vertical-align: middle;
+    }
 }
